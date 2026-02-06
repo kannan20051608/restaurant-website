@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #fff8f2;
+  color: #2e2e2e;
+}
+
+/* ================= NAVBAR (MATCH MENU PAGE) ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #7b1e1e;
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  padding-bottom: 6px;
+  position: relative;
+}
+
+/* Gold underline active (same as Menu page) */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #f4b400;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  color: #f4b400;
+}
+
+.order-btn {
+  background: #f4b400;
+  color: #7b1e1e !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #7b1e1e;
+  padding: 70px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  transition: 0.3s ease;
+  z-index: 2000;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu a.active {
+  color: #f4b400;
+  font-weight: 600;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  background: url("images/hero.png") center/cover no-repeat;
+}
+
+.hero-overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+}
+
+.hero span {
+  color: #f4b400;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+}
+
+.hero-actions a {
+  padding: 12px 28px;
+  background: #f4b400;
+  color: #7b1e1e;
+  text-decoration: none;
+  border-radius: 30px;
+  margin: 0 8px;
+}
+
+.hero-actions .outline {
+  background: transparent;
+  border: 2px solid #f4b400;
+  color: #f4b400;
+}
+
+/* ================= INTRO ================= */
+.intro {
+  padding: 70px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 34px;
+  color: #7b1e1e;
+  margin-bottom: 15px;
+}
+
+/* ================= DISHES ================= */
+.dishes {
+  padding: 80px 40px;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.dish {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.dish img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ================= GALLERY ================= */
+.gallery-strip {
+  display: flex;
+}
+
+.gallery-strip img {
+  width: 33.33%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* ================= WHY US ================= */
+.why-us {
+  background: #7b1e1e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ================= STATS ================= */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.stats h2 {
+  font-size: 40px;
+  color: #7b1e1e;
+}
+
+/* ================= CTA ================= */
+.final-cta {
+  background: #f4b400;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.final-cta a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #7b1e1e;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #2b0d0d;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-actions a {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+  }
+
+  .dish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-strip {
+    flex-direction: column;
+  }
+
+  .gallery-strip img {
+    width: 100%;
+  }
+
+  .why-us,
+  .stats {
+    flex-direction: column;
+  }
+}

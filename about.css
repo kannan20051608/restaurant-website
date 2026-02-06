@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #fff8f2;
+  color: #2e2e2e;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #7b1e1e;
+  padding: 14px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #f4b400;
+  border-radius: 5px;
+}
+
+.order-btn {
+  background: #f4b400;
+  color: #7b1e1e !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Hamburger */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #7b1e1e;
+  padding: 70px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  transition: 0.3s ease;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.mobile-menu a.active {
+  color: #f4b400;
+  font-weight: 600;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  color:black;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+}
+
+/* ================= STORY ================= */
+.about-section {
+  display: flex;
+  gap: 40px;
+  padding: 80px 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #7b1e1e;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ================= VALUES ================= */
+.values {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #7b1e1e;
+  color: white;
+  text-align: center;
+}
+
+.value-card {
+  max-width: 250px;
+}
+
+/* ================= WHY ================= */
+.why-choose {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.why-choose h2 {
+  color: #7b1e1e;
+  margin-bottom: 20px;
+}
+
+.why-choose ul {
+  list-style: none;
+}
+
+.why-choose li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* ================= CTA ================= */
+.final-cta {
+  background: #f4b400;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.final-cta a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #7b1e1e;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #2b0d0d;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .values {
+    flex-direction: column;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Order | Priya Murugan</title>
+  <link rel="stylesheet" href="order.css"/>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">Priya Murugan</div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="order-btn active">Order</a>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="menu.html" onclick="toggleMenu()">Menu</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  <a href="order.html" class="order-btn" onclick="toggleMenu()">Order</a>
+</div>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="order-hero">
+  <h1>Place Your Order</h1>
+  <p>Fresh • Hygienic • Made with Love</p>
+</section>
+
+<!-- ================= ORDER FORM ================= -->
+<section class="order-section">
+  <form id="orderForm" class="order-card">
+
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Customer Name" required />
+      <input type="number" id="table" placeholder="Table Number" required />
+    </div>
+
+    <h3>Select Items</h3>
+
+    <div id="menuItems"></div>
+
+    <div class="summary">
+      <p>Grand Total: ₹ <span id="grandTotal">0</span></p>
+      <p class="datetime">Date & Time: <span id="dateTime"></span></p>
+    </div>
+
+    <button type="submit">Confirm Order</button>
+
+    <p id="msg"></p>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 Priya Murugan Restaurant</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+
+  // Auto date time
+  document.getElementById("dateTime").innerText =
+    new Date().toLocaleString();
+</script>
+
+<script src="order.js"></script>
+</body>
+</html>

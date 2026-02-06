@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Priya Murugan Restaurant</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Priya Murugan</div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="order-btn">Order</a>
+  </nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="order.html" class="order-btn">Order</a>
+</div>
+
+<!-- HERO -->
+<section class="about-hero">
+  <h1>About Us</h1>
+  <p>Tradition • Taste • Trust</p>
+</section>
+
+<!-- STORY -->
+<section class="about-section">
+  <div class="about-text">
+    <h2>Our Story</h2>
+    <p>
+      Priya Murugan Restaurant was started with a simple idea —
+      to serve food that feels like home. Our recipes come from
+      generations of traditional cooking, prepared fresh every day.
+    </p>
+    <p>
+      We believe good food doesn’t need shortcuts. Every dish is cooked
+      with care, quality ingredients, and respect for authentic flavors.
+    </p>
+  </div>
+
+  <div class="about-image">
+    <img src="images/hero.png" alt="Restaurant">
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="value-card">
+    <h3>Fresh Ingredients</h3>
+    <p>Only quality vegetables, grains, and spices.</p>
+  </div>
+
+  <div class="value-card">
+    <h3>Traditional Cooking</h3>
+    <p>Recipes passed through generations.</p>
+  </div>
+
+  <div class="value-card">
+    <h3>Customer Trust</h3>
+    <p>Serving families with honesty and care.</p>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>✔ Hygienic kitchen & clean environment</li>
+    <li>✔ Affordable pricing</li>
+    <li>✔ Consistent taste every day</li>
+    <li>✔ Friendly service</li>
+  </ul>
+</section>
+
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Come Taste the Difference</h2>
+  <p>Visit us or order online today.</p>
+  <a href="menu.html">Explore Menu</a>
+</section>
+
+<footer>
+  <p>© 2026 Priya Murugan Restaurant</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

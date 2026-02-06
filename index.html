@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priya Murugan Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">Priya Murugan</div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="order-btn">Order</a>
+  </nav>
+</header>
+
+<!-- Mobile Side Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active" onclick="toggleMenu()">Home</a>
+  <a href="menu.html" onclick="toggleMenu()">Menu</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  <a href="order.html" class="order-btn" onclick="toggleMenu()">Order</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>Food That Feels<br><span>Like Home</span></h1>
+    <p>Traditional recipes • Fresh cooking • Honest flavors</p>
+    <div class="hero-actions">
+      <a href="menu.html">View Menu</a>
+      <a href="order.html" class="outline">Order Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="intro">
+  <h2>A Place Where Taste Meets Tradition</h2>
+  <p>
+    Priya Murugan Restaurant is built on family recipes, slow cooking,
+    and a deep love for authentic South Indian food.
+  </p>
+</section>
+
+<!-- Signature Dishes -->
+<section class="dishes">
+  <h2>Signature Dishes</h2>
+
+  <div class="dish-grid">
+    <div class="dish">
+      <img src="images/biriyani.png" alt="Biryani">
+      <h3>Chicken Biryani</h3>
+      <p>Rich aroma with traditional spices</p>
+    </div>
+
+    <div class="dish">
+      <img src="images/dosa.jpg" alt="Dosa">
+      <h3>Masala Dosa</h3>
+      <p>Golden crispy dosa & potato masala</p>
+    </div>
+
+    <div class="dish">
+      <img src="images/meals.jpg" alt="Meals">
+      <h3>South Indian Meals</h3>
+      <p>A complete traditional experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery-strip">
+  <img src="images/image1.png" alt="">
+  <img src="images/image2.jpg" alt="">
+  <img src="images/image3.jpg" alt="">
+</section>
+
+<!-- Why Us -->
+<section class="why-us">
+  <div class="why-box">
+    <h3>Honest Cooking</h3>
+    <p>No artificial colors or shortcuts.</p>
+  </div>
+  <div class="why-box">
+    <h3>Fresh Everyday</h3>
+    <p>Prepared fresh every morning.</p>
+  </div>
+  <div class="why-box">
+    <h3>Loved by Families</h3>
+    <p>Trusted by local customers.</p>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div>
+    <h2>10+</h2>
+    <p>Years of Experience</p>
+  </div>
+  <div>
+    <h2>500+</h2>
+    <p>Happy Customers Daily</p>
+  </div>
+  <div>
+    <h2>30+</h2>
+    <p>Authentic Dishes</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="final-cta">
+  <h2>Ready to Taste Something Special?</h2>
+  <p>Order now and enjoy authentic food at home.</p>
+  <a href="order.html">Place Order</a>
+</section>
+
+<footer>
+  <p>© 2026 Priya Murugan Restaurant</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

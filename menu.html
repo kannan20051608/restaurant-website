@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Priya Murugan Restaurant</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Priya Murugan</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="order.html" class="order-btn">Order</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="menu-hero">
+  <h1>Our Menu</h1>
+  <p>Morning • Afternoon • Night</p>
+</section>
+
+<!-- FILTERS -->
+<section class="filters">
+  <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+  <button class="filter-btn" onclick="filterMenu('morning', this)">Morning</button>
+  <button class="filter-btn" onclick="filterMenu('afternoon', this)">Afternoon</button>
+  <button class="filter-btn" onclick="filterMenu('night', this)">Night</button>
+</section>
+
+<!-- MENU GRID -->
+<section class="menu-container">
+
+  <!-- MORNING -->
+  <div class="menu-item morning">
+    <img src="images/masala dosa.jpg">
+    <h3>Masala Dosa</h3>
+    <p>₹60</p>
+  </div>
+
+  <div class="menu-item morning">
+    <img src="images/idli sambar.jpg">
+    <h3>Idli & Sambar</h3>
+    <p>₹40</p>
+  </div>
+
+  <div class="menu-item morning">
+    <img src="images/pongal.jpg">
+    <h3>Pongal</h3>
+    <p>₹50</p>
+  </div>
+
+  <!-- AFTERNOON -->
+  <div class="menu-item afternoon">
+    <img src="images/veg meals.jpg">
+    <h3>Veg Meals</h3>
+    <p>₹120</p>
+  </div>
+
+  <div class="menu-item afternoon">
+    <img src="images/chicken biriyani.jpg">
+    <h3>Chicken Biryani</h3>
+    <p>₹180</p>
+  </div>
+
+  <!-- NIGHT -->
+  <div class="menu-item night">
+    <img src="images/parotta.jpg">
+    <h3>Parotta</h3>
+    <p>₹40</p>
+  </div>
+
+  <div class="menu-item night">
+    <img src="images/chicken curry.jpg">
+    <h3>Chicken Curry</h3>
+    <p>₹120</p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Priya Murugan Restaurant</p>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
